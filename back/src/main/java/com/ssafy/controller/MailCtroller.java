@@ -28,8 +28,7 @@ public class MailCtroller {
     private final UserRepository userRepository;
 
     @Autowired
-    public MailCtroller(AuthMailSender mailSender, HashEncoder hashEncoder, AuthMailRepository authMailRep,
-            UserRepository userRepository) {
+    public MailCtroller(AuthMailSender mailSender, HashEncoder hashEncoder, AuthMailRepository authMailRep, UserRepository userRepository) {
         this.mailSender = mailSender;
         this.hashEncoder = hashEncoder;
         this.authMailRep = authMailRep;
