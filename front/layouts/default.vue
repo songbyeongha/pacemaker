@@ -11,8 +11,6 @@
             <span id="mainTitle">{{ title }}</span>
           </nuxt-link>
         </v-flex>
-        <!-- <v-btn text nuxt to="/MemberInfoPage">마이 페이지</v-btn>
-        <v-btn text @click="logout">로그아웃</v-btn> -->
       </v-container>
       <v-list>
         <div  v-for="(item, i) in items" :key="i">
@@ -46,7 +44,7 @@
           <span
             class="fas fa-times closeModalBtn"
             @click="modalClose"
-          >
+          > 
             <v-icon>mdi-close</v-icon>
           </span>
         </h3>
@@ -62,7 +60,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import Modal from '~/components/Modal.vue';
+import Modal from '~/components/Modal.vue'
 
 export default {
   data() {

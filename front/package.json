@@ -1,11 +1,5 @@
 {
   "name": "front",
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3000"
-    }
-  },
   "version": "1.0.0",
   "description": "pacemaker",
   "author": "docker",
