@@ -82,7 +82,7 @@
   </v-container>
 </template>
 <script>
-import { findModelRoomById, deleteRoomById } from '~/api/modelRoom.js'
+import { findModelRoomById, deleteRoomById, plusModelRoomUserCount } from '~/api/modelRoom.js'
 import { createRoom, countByUserIdAndModelId } from '~/api/rooms.js'
 
 export default {
@@ -149,6 +149,7 @@ export default {
 
       try {
         await createRoom(data)
+        await plusModelRoomUserCount(this.roomId);
       } catch (err) {
         console.error(err)
       }
